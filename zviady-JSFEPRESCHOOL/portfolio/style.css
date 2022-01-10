@@ -1,0 +1,293 @@
+/* merriweather-regular - latin */
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../portfolio/fonts/merriweather-v28-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../portfolio/fonts/merriweather-v28-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* merriweather-700 - latin */
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../portfolio/fonts/merriweather-v28-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../portfolio//fonts/merriweather-v28-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../portfolio//fonts/inter-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../portfolio//fonts/inter-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-700 - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../portfolio//fonts/inter-v7-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../portfolio//fonts/inter-v7-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html{
+    box-sizing:border-box;
+  }
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family:'Inter';
+    font-style:normal;
+    font: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;   
+}
+/* Header styles begin*/
+.header, .container{
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../portfolio/assets/bghero.jpg) no-repeat;
+    background-position: center 0;
+
+}
+.header__logo{
+  background-size: contain;
+  background-repeat: no-repeat;  
+  transition: 0.3s;
+}
+.header__logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    /*background-color: #BDAE82; check later */
+  }
+
+.header__nav{
+    
+    margin-left: auto;
+    
+}
+.header__list{
+    
+    margin-left: auto 0px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.header__item{
+    margin-right: 30px;
+}
+.header__list:last-child{
+    margin-left: 31px;
+    margin-right: 0;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link , .header__link-switch-ru , .between__switch{
+    font-size: 20px;
+    Line-height: 50px;
+    line-height: 207%;
+    vertical-align: Top;
+    color: white;
+    text-decoration: none;
+}
+.header__link-switch-english{
+    font-size: 20px;
+    Line-height: 50px;
+    line-height: 207%;
+    align-items: Left;
+    text-decoration: none;
+}
+.header__link-switch-english ,.header__link-switch-ru ,.header__link:hover{
+    color: #BDAE82;
+}
+/*Header styles end*/
+
+
+
+/* Main styles begin*/
+
+/* Hero styles begin*/
+.hero{
+    height:820px ;
+    background: url(../portfolio/assets/bghero.jpg);
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    padding-top: 160px;
+    padding-bottom: 100px;
+   
+}
+.hero-title{
+    max-width: 500px;
+    padding-left: 80px;
+    font-family: Merriweather;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 0px; 
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+.hero__subtitle{
+   margin-top: 0px;
+    margin-left: 80px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    max-width: 470px;
+    padding-bottom: 25px;
+    
+}   
+.submit__button{
+    width:220px;
+    height: 55px;
+    padding: 8px,72px,7px,73px;
+    margin-left: 80px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #BDAE82;
+    border:0;
+    cursor: pointer
+}
+.submit__button:hover{
+   color: white; 
+}
+/*Hero styles end*/
+
+
+/* Skills  styles begin*/
+.skills__wrap{
+    height: 482px;
+    background:black;
+    margin: 0;
+}
+.titles{
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    margin: auto;
+    font-family: Merriweather;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #BDAE82;
+    background: black;
+    padding-bottom: 60px;
+    padding-top: 100px;
+  }
+  .titles:before, .titles:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid;
+    margin: auto;
+  }
+  .titles:before {
+    margin-right: 20px
+  }
+  .titles:after {
+    margin-left: 20px
+  }
+.skills__provided{
+    margin:0  auto;
+    max-width: 1400px;
+    height: 242px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}  
+.skills__cards{
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    max-width: 320px;
+    padding: 0 20px; 
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.skills__title{
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.skills__icon{
+    background-position: center top;
+    width: 62px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+/* Skills  styles end*/
+
+/* Portfolio  styles begin*/
+.portfolio{
+    height: 482px;
+    background:black;
+    margin: 0;
+}
+.portfolio__nav{
+    display: flex;
+    justify-content: center;
+  
+}
+.portfolio__nav > .submit__button {
+    margin: 5px;
+    border: 1px solid;
+    background-color: black;
+    color: #BDAE82;
+}
+.submit__button:hover{
+    color: white;
+   
+}
+
+
+
+/* Portfolio  styles end*/
+
+
+/* Main styles end*/
+
